@@ -7,7 +7,7 @@ import DoctorListingPage from './pages/DoctorListingPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL || '/'}>
       <Routes>
         <Route path='/' element={<SearchPage/>}/>
         <Route path='/doctors' element={<DoctorListingPage/>}/>
