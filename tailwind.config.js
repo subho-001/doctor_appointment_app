@@ -42,5 +42,6 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  base:'/doctor_appointment_app/',
 }
 
